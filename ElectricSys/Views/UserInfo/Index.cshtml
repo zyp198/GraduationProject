@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <!--提交到后台控制器中的GetUserInfo方法中-->
+        <form action="~/UserInfo/GetUserInfo" method="post">
+            <table>
+                <tr>
+                    <!--必须给每一个字段取一个唯一的name，后台控制器通过name来识别-->
+                    <td>
+                        用户名：<input type="text" name="username" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        密 码：<input type="text" name="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="提交" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
